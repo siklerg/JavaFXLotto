@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="anchorpane" prefHeight="300.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lottoApplication.LottoController">
+   <children>
+      <Pane id="basicPane" fx:id="basicPane" prefHeight="300.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+                  <Text layoutX="175.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="L O T T O" />
+                  <Button id="generateButton" fx:id="generateButton" layoutX="170.0" layoutY="261.0" mnemonicParsing="false" onAction="#calculate" text="Sorsolás" />
+            <Text layoutX="154.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Kisorsolt számok:" />
+                  <HBox alignment="CENTER" layoutX="66.0" layoutY="172.0" prefHeight="17.0" prefWidth="268.0" spacing="40.0">
+                     <children>
+                        <Label id="genNumber1" fx:id="genNumberLabel1" alignment="CENTER" layoutX="38.0" layoutY="88.0" textAlignment="CENTER" />
+                        <Label id="genNumber2" fx:id="genNumberLabel2" alignment="CENTER" layoutX="100.0" layoutY="88.0" textAlignment="CENTER" />
+                        <Label id="genNumber3" fx:id="genNumberLabel3" alignment="CENTER" layoutX="169.0" layoutY="88.0" textAlignment="CENTER" />
+                        <Label id="genNumber4" fx:id="genNumberLabel4" alignment="CENTER" layoutX="235.0" layoutY="88.0" textAlignment="CENTER" />
+                        <Label id="genNumber5" fx:id="genNumberLabel5" alignment="CENTER" layoutX="309.0" layoutY="88.0" textAlignment="CENTER" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="70.0" layoutY="66.0" spacing="30.0">
+                     <children>
+                        <TextField id="guessNumberText1" fx:id="guessNumberText1" layoutX="26.0" layoutY="43.0" prefHeight="25.0" prefWidth="28.0" />
+                        <TextField id="guessNumberText2" fx:id="guessNumberText2" layoutX="36.0" layoutY="53.0" prefHeight="25.0" prefWidth="28.0" />
+                        <TextField id="guessNumberText3" fx:id="guessNumberText3" layoutX="46.0" layoutY="63.0" prefHeight="25.0" prefWidth="28.0" />
+                        <TextField id="guessNumberText4" fx:id="guessNumberText4" layoutX="56.0" layoutY="73.0" prefHeight="25.0" prefWidth="28.0" />
+                        <TextField id="guessNumberText5" fx:id="guessNumberText5" layoutX="66.0" layoutY="83.0" prefHeight="25.0" prefWidth="28.0" />
+                     </children>
+                  </HBox>
+            <Label id="calcMessage" fx:id="calcMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="74.0" layoutY="189.0" prefHeight="57.0" prefWidth="252.0" textAlignment="CENTER" />
+         </children>
+      </Pane>
+      <Pane id="popupPane" fx:id="popupPane" layoutX="43.0" layoutY="100.0" prefHeight="120.0" prefWidth="305.0" visible="false">
+         <children>
+            <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#dddd49" height="120.0" stroke="BLACK" strokeType="INSIDE" width="305.0" />
+            <Button id="buttonOK" fx:id="buttonOK" layoutX="88.0" layoutY="81.0" mnemonicParsing="false" onAction="#clickOK" prefHeight="17.0" prefWidth="130.0" text="OK" />
+            <Label id="message" fx:id="alertMessage" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="13.0" prefHeight="57.0" prefWidth="277.0" textAlignment="CENTER" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
