@@ -1,3 +1,3 @@
 # JavaFXLotto
 
-A sanfranciscoboljottem.com online tanfolyam JavaFX feladata, plusz: sorba rendezés + nyerő számik jelölése pirossal.
+A sanfranciscoboljottem.com online tanfolyam JavaFX feladata, plusz: sorba rendezés + nyerő számok jelölése pirossal.
